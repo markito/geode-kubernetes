@@ -1,0 +1,21 @@
+apiVersion: v1
+kind: ReplicationController
+metadata:
+  name: locator
+spec:
+  replicas: 1
+  selector:
+    geode-locator: "true"
+  template:
+    metadata:
+      labels:
+        name: geode-locator
+        geode-locator: "true"
+        role: locator
+    spec:
+      containers:
+      - name: locator
+        image: apachegeode/geode:1.0.0-incubating.M3
+        command: ["start locator"]
+        ports:
+          - containerPort: 10334
