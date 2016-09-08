@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: locator
-        image: apachegeode/geode:1.0.0-incubating.M3
-        command: ["gfsh", "start", "locator", "--name=locator1"]
+        image: markito/geode:k8
+        command: ["/gfshWrapper.sh", "gfsh", "start", "locator", "--name=locator1"]
         ports:
           - containerPort: 10334
