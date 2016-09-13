@@ -16,6 +16,6 @@ spec:
       containers:
       - name: server
         image: markito/geode:k8
-        command: ["/gfshWrapper.sh", "gfsh", "start", "server", "--name=${HOSTNAME}", "--locators=${LOCATOR_SERVICE_SERVICE_HOST}:${LOCATOR_SERVICE_SERVICE_PORT}"]
+        command: ["/startServer.sh"]
         ports:
           - containerPort: 40404
