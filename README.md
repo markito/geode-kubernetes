@@ -11,6 +11,7 @@ Go to the `image` directory and build the Docker image using:
 # Running on Minikube
 
 *Steps*:
+
 1. `kubectl create -f locator-controller.yaml`
 1. `kubectl create -f locator-service.yaml`
 1. `kubectl create -f server-controller.yaml`
