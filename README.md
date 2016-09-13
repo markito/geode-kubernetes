@@ -19,6 +19,10 @@ Go to the `image` directory and build the Docker image using:
 
 Follow the instructions to install - [minikube](http://kubernetes.io/docs/getting-started-guides/minikube/)
 
+You can scale the number of servers by using the following command:
+
+`kubectl scale --replicas=3 -f server-controller.yaml`
+
 # Running on Google Cloud
 
 [TBD]
