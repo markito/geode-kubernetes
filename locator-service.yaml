@@ -4,7 +4,7 @@ metadata:
   labels:
     name: locator-service
     role: locator
-  name: locator-service
+  name: locator
 spec:
   ports:
     - port: 10334
