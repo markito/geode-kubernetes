@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    name: locator-service
+    role: locator
+  name: locator-service
+spec:
+  ports:
+    - port: 10334
+      targetPort: 10334
+  selector:
+    geode-locator: "true"
