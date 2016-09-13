@@ -17,7 +17,7 @@ Go to the `image` directory and build the Docker image using:
 1. `kubectl create -f server-controller.yaml`
 1. `kubectl create -f server-service.yaml`
 
-To install Minikube follow the instructions to install [minikube](http://kubernetes.io/docs/getting-started-guides/minikube/)
+Follow the instructions to install - [minikube](http://kubernetes.io/docs/getting-started-guides/minikube/)
 
 # Running on Google Cloud
 
